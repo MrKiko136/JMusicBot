@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  jmusicbot:
+    build: .  
+    container_name: jmusicbot
+    restart: unless-stopped
+    volumes:
+      - ./config:/opt/jmusicbot/config
